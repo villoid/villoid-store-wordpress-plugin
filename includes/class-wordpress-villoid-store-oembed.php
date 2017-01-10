@@ -7,8 +7,8 @@ class oEmbedVilloid {
 
   function __construct()
   {
-    $this->oembed_endpoint = 'https://.*.villoid.com/oembed/';
-    $this->oembed_format = '#https?://(www\\.)?.*villoid.com/.*#i';
+    $this->oembed_endpoint = 'https://.*\.villoid.com/oembed/';
+    $this->oembed_format = '#https?://(www\\.)?.*\.villoid.com/.*#i';
 
     $this->new_oembed();
   }
