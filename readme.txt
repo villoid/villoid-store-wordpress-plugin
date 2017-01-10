@@ -22,6 +22,10 @@ Installing "oEmbedVilloidStore" can be done either by searching for "oEmbedVillo
 1. Upload the ZIP file through the 'Plugins > Add New > Upload' screen in your WordPress dashboard
 1. Activate the plugin through the 'Plugins' menu in WordPress
 
+== Screenshots ==
+
+1. Usage of script
+
 == Frequently Asked Questions ==
 
 = What is the plugin for? =
