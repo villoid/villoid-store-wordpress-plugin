@@ -7,8 +7,8 @@ class oEmbedVilloid {
 
   function __construct()
   {
-    $this->oembed_endpoint = 'https://.*\\.villoid\\.com/oembed/';
-    $this->oembed_format = '#https?://(www\\.)?.*\\.villoid\\.com/.*#i';
+    $this->oembed_format = '#https?://[a-zA-Z0-9-]{2,63}\\.villoid\\.com/.*#i';
+    $this->oembed_endpoint = 'https://store-web.villoid.com/oembed/';
 
     $this->new_oembed();
   }
@@ -17,7 +17,7 @@ class oEmbedVilloid {
 
   function new_oembed()
   {
-    wp_oembed_add_provider( $this->oembed_format, $this->oembed_endpoint );
+    wp_oembed_add_provider( $this->oembed_format, $this->oembed_endpoint, true );
   }
 
 }
